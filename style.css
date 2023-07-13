@@ -1,17 +1,21 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 .container {
+  background-color: red;
+  height: 30vh;
+  width: 30px;
   border: 1px solid black;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 90vh;
   margin: 0 auto;
-  margin-top: 60px;
-  background-color: cornflowerblue;
+  margin-top: 25vh;
+  animation: rotate 5s infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+body h2 {
+  display: flex;
+  justify-content: center;
 }
