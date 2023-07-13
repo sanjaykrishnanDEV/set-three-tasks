@@ -1,53 +1,16 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.container {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 2fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "a b c"
-    "d d d"
-    "e e f";
-  gap: 5px 6px;
-}
-
-.a {
-  grid-area: a;
-  background-color: aqua;
-  border: 1px solid black;
-}
-
-.b {
-  grid-area: b;
-  background-color: brown;
-}
-
-.c {
-  background-color: blueviolet;
-  grid-area: c;
-}
-
-.d {
-  color: white;
-  display: flex;
+.button {
+  display: flex;flex-direction: column;
   justify-content: center;
   align-items: center;
-  grid-area: d;
-  background-color: red;
+  height: 300px;
+  width: 400px;
+  border: 1px solid black;margin: 0 auto;margin-top: 100px;
 }
 
-.e {
-  background-color: yellowgreen;
-  grid-area: e;
+.button button{
+    height: 30px;width: 100px;
+    cursor: pointer;
 }
-
-.f {
-  background-color: turquoise;
-  grid-area: f;
+.button button:active{
+    background-color: green;color: white;
 }
