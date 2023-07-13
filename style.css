@@ -2,13 +2,52 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: url(./pexels-pixabay-531880.jpg);
-  background-position: center;
-  background-size: cover;
 }
 .container {
   height: 100vh;
-  width: 100%;
-  /* background-color: aqua; */
-  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "a b c"
+    "d d d"
+    "e e f";
+  gap: 5px 6px;
+}
+
+.a {
+  grid-area: a;
+  background-color: aqua;
+  border: 1px solid black;
+}
+
+.b {
+  grid-area: b;
+  background-color: brown;
+}
+
+.c {
+  background-color: blueviolet;
+  grid-area: c;
+}
+
+.d {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: d;
+  background-color: red;
+}
+
+.e {
+  background-color: yellowgreen;
+  grid-area: e;
+}
+
+.f {
+  background-color: turquoise;
+  grid-area: f;
 }
