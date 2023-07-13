@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-        
-    </div>
-  </body>
+<head>
+<meta charset="utf-8">
+<title>HTML</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="form">
+    <form action="#">
+        <label for="name">NAME</label><br>
+        <input type="text"  pattern="[a-zA-Z]*" title="Enter only alphabets" placeholder="NAME"/><br>
+        <label for="email">EMAIL</label><br>
+        <input type="text" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address" placeholder="EMAIL"/><br>
+        <label for="password">PASSWORD</label><br>
+        <input type="password" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{6,}$" title="should have a number, alphabets, and a symbol" placeholder="PASSWORD"/><br>
+        <button type="submit">Submit</button>
+    </form>
+   </div>
+</div>
+</body>
 </html>
